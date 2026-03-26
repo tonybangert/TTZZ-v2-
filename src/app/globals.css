@@ -18,12 +18,17 @@
   --color-destructive: #ef4444;
   --color-destructive-foreground: #ffffff;
   --color-ring: #fe2c55;
-  --radius: 0.75rem;
+  --radius-custom: 0.75rem;
   --font-sans: "General Sans", system-ui, sans-serif;
 }
 
+* {
+  border-color: var(--color-border);
+}
+
 body {
-  background: var(--color-background);
-  color: var(--color-foreground);
-  font-family: var(--font-sans);
+  background-color: #0a0a0a;
+  color: #ededed;
+  font-family: "General Sans", system-ui, sans-serif;
+  min-height: 100vh;
 }

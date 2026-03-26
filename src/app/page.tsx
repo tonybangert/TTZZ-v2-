@@ -314,7 +314,7 @@ export default function Home() {
               {displayLinks.map((link) => (
                 <div
                   key={link.id}
-                  className="group border border-border rounded-[var(--radius)] bg-card p-4 hover:border-primary/30 transition-colors"
+                  className="group border border-border rounded-xl bg-card p-4 hover:border-primary/30 transition-colors"
                 >
                   <div className="flex items-start justify-between gap-2 mb-2">
                     <h3 className="font-semibold text-sm line-clamp-1">{link.title}</h3>
@@ -405,7 +405,7 @@ export default function Home() {
               <select
                 value={linkForm.folderId}
                 onChange={(e) => setLinkForm({ ...linkForm, folderId: e.target.value })}
-                className="flex h-10 w-full rounded-[var(--radius)] border border-input bg-background px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                className="flex h-10 w-full rounded-xl border border-input bg-background px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               >
                 <option value="">No folder</option>
                 {folders.map((f) => (
@@ -480,7 +480,7 @@ export default function Home() {
               <select
                 value={linkForm.folderId}
                 onChange={(e) => setLinkForm({ ...linkForm, folderId: e.target.value })}
-                className="flex h-10 w-full rounded-[var(--radius)] border border-input bg-background px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                className="flex h-10 w-full rounded-xl border border-input bg-background px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               >
                 <option value="">No folder</option>
                 {folders.map((f) => (
